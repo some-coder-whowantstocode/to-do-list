@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  aqua;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    /* padding-bottom: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box{
+    max-height: 100vh;
+    min-height: 70vh;
+    
+    width: 50%;
+    
+    background-color: white;
+    color: black;
+    
+    overflow: scroll;
+    box-shadow: 2px 4px 7px 4px rgba(0,0,0,0.5);
+    padding: 10px;
+    /* line-height: 2.4; */
+}
+input{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 10px;
+    display: block;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border: light ;
+    box-shadow: 2px 4px 8px -3px rgba(0,0,0,0.5);
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input:focus{
+    border: 0;
+    outline: 0;
+}
+#to-do-box {
+    list-style: none;
+    margin-top: 10px;
+   
+}
+#to-do-box li{
+    
+    margin-top: 10px;
+    position: relative;
+    justify-content: space-between;
+    background-color: rgb(68, 51, 18);
+    padding: 10px;
+    font-size: 17px;
+    padding-right: 20px;
+    user-select: none;
+    color: white;
+    height: 40px;
+}
+#to-do-box li i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+i{
+    cursor: pointer;
+}
+.done{
+    text-decoration: line-through;
+    background-color: wheat !important;
+    color: black !important;
+}
